@@ -1,0 +1,35 @@
+.row.text-center
+    .col-sm-3
+      h2.title Sản Phẩm Mua Nhiều
+      span.border
+      .row
+        each val,index in data3
+          .col-sm-12.small--product
+            img(src='../images/spx2-'+index+'.png', alt='', srcset='')
+            .box
+              .btns
+                  a.buy-now(href='#') mua ngay
+                  a.search(href='#')
+                    i.fas.fa-search
+            p=val
+            for n in [1,2,3,4,5]
+              i.fas.fa-star    
+            p.price 500.000 vnđ
+            s 800.000 vnđ
+    .col-sm-9
+      h2.title Sản Phẩm Khuyến Mãi
+      span.border
+      .row
+        each item,index in data
+          .col-sm-4.medium--product
+            img(src='../images/spx2-'+index+'.png', alt='', srcset='')
+            .box
+              .btns
+                  a.buy-now(href='#') mua ngay
+                  a.search(href='#')
+                    i.fas.fa-search
+            p=item
+            for n in [1,2,3,4,5]
+              i.fas.fa-star 
+            p.price 500.000 vnđ
+            s 800.000 vnđ   
