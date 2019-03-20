@@ -1,0 +1,67 @@
+footer
+    .float-sm-left.info-left
+        p Kênh Thông Tin Từ Chúng Tôi
+        .contact-icons
+          each icon in icons
+            a(href='#')
+              i(class=icon)
+    .d-flex.justify-content-end.info-right
+        p
+          | Đăng Ký Nhận 
+          span Email Từ Chúng Tôi
+        input.form-control(type='text')
+    .clearfix
+    .row.our--information
+      .float-sm-left
+        h1
+          | GREEN
+          span SHOP
+        h3 Món Quà Từ Thiên Nhiên
+        p
+          | Green shop được thành lập từ 8/2010 được sự tin tưởng của khách hàng trong suốt thời gian hoạt động đến nay cửa hàng ngày một phát triển
+        p
+          i.fas.fa-mobile-alt |  Điện thoại : (84-4) 66.558.868 
+        p
+          i.fas.fa-envelope |Email: info@dkt.com.vn
+      .float-sm-right
+        ul
+          p Thông Tin Khách Hàng
+          -const cliInfo=['tài khoản của tôi','sản phẩm yêu thích','chính sách đổi trả','góp ý','khiếu nại']
+          each item in cliInfo
+            li
+              i.fas.fa-chevron-right
+                a(href='#')=item 
+        ul
+          p Hỗ Trợ Dịch vụ
+          -const support = ['Hệ Thống Cửa Hàng','hướng dẫn mua hàng','hướng dẫn thanh toán','tích điểm đổi quà','câu hỏi thường gặp']
+          each item in support
+            li
+              i.fas.fa-chevron-right
+                a(href='#')=item
+        ul
+          p Chính sách ưu đãi
+          -const policy = ['chính sách giao hàng','chính sách đổi trả sản phẩm','chính sách bảo hành','giới thiệu sản phẩm mới','trả góp']
+          each item in policy
+            li
+              i.fas.fa-chevron-right
+                a(href='#')=item
+        ul
+          p Tin Tức
+          -const news=['tin mới','khuyến mãi','tuyển dụng','downloads','tags']
+          each item in news
+            li
+              i.fas.fa-chevron-right
+                a(href='#')=item
+      .clearfix
+    .row.menu--bottom
+      .col-sm-6.info--1
+        -const direct = ['site map' ,'danh mục sản phẩm', 'hợp tác' , 'thông tin liên hệ' ,'câu hỏi thường gặp']
+        each item in direct
+          p=item
+      .col-sm-6.info--2
+        -const fab = ['fab fa-cc-visa', 'fab fa-cc-mastercard', 'fab fa-cc-paypal', 'fab fa-cc-mastercard']
+        each item in fab
+          i(class=fab)
+    .row.author
+      .col-sm-12
+        p thiết kế  bởi Bizweb ©

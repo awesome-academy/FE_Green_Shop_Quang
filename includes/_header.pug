@@ -1,0 +1,52 @@
+doctype html
+html(lang='en', dir='ltr')
+  head
+    meta(charset='utf-8')
+    title Green Shop
+    link(rel='stylesheet', href='../style/nomarlize.css')
+    link(rel='stylesheet', href='../style/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
+    link(href='https://fonts.googleapis.com/css?family=Roboto', rel='stylesheet')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.2/css/all.css', integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr', crossorigin='anonymous')
+  body
+    header
+      .status-bar
+        .float-sm-left
+          | Open Time : 8:00-18:00 Mon-Sun 
+          .contact-icons
+          each icon in icons
+            a(href='#')
+              i(class=icon)
+        .float-sm-right
+          a(href='#')
+            i.fas.fa-user  Đăng Nhập 
+          a(href='#')
+            i.fas.fa-user-plus  Đăng Ký
+        .clearfix
+      .banner
+        .float-sm-left
+          h1
+            | Green 
+            span Shop
+          p Món quà từ thiên nhiên
+        .float-sm-right
+          p
+            i.fas.fa-phone  Hỗ trợ :  (04) 6674 2332 - (04) 3786 8904
+          input.form-control(type='search', placeholder='Tìm Kiếm ... ')
+          .cart
+            a(href='#')
+              i.fas.fa-shopping-cart  0 Sản Phẩm
+        .clearfix
+      nav.navbar.navbar-expand-sm.justify-content-center
+        ul.navbar-nav
+          li.nav-item
+            a(href='')
+              i.fas.fa-bars
+        -const nav = ['Trang Chủ','Giới Thiệu','Sản Phẩm','Sản Phẩm Mới','Tin Tức','Liên Hệ']
+        each item in nav
+          li.nav-item
+            a(href='#')=item
