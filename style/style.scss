@@ -2,6 +2,9 @@
 @import 'components/fonts.scss';
 @import 'components/mixins.scss';
 @import 'components/effects.scss';
+body{
+    background: #fbf9f9;
+}
 .border{
     @include border;
 }
@@ -28,72 +31,6 @@
     }
     .float-sm-right{
         margin-right: 10%;
-    }
-}
-.grid--view{
-    height: 100%;
-    padding-bottom: 30px;
-    
-    .directory{
-        ol{
-            background: none;
-        }
-    }
-    .grid--banner{
-        width: 100%;
-        height: 7%;
-        padding-top: 40px;
-    }
-    .icon--left{
-        i{
-            padding: 0 20px;
-            font-size: 15pt;
-            &:hover{
-                color:$green-nav-hover;
-            }
-        }
-    }
-    .icon--right{
-        width: 54%;
-        p{
-            display: inline;
-            font-size: 15pt
-        }
-    }
-}
-.paginate{
-    color:$black-1;
-    padding-right: 8%;
-    li{
-        :hover{
-            color:$white-1;
-            background: $green-nav-hover;
-        }
-    }
-}
-.side--bar{
-    .color{
-        width: 49%;
-        height: 100px;
-        display:inline-block;
-        position: relative;
-        .circle{
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: inline-block;
-        }
-        a{
-            display:inline;
-            position: absolute;
-            top: 10%;
-            left: 50%;
-            color:$grey-1;
-            text-decoration: none;
-            :hover{
-                text-decoration: none;
-            }
-        }
     }
 }
 
@@ -329,6 +266,136 @@ footer{
             text-transform: capitalize;
             padding-top: 15px;
             color:$white-1;
+        }
+    }
+}
+.list--product{
+    display: block;
+    position: relative;
+    img{
+        height: 90%;
+        width: 30%;
+    }
+    .list-content{
+        position: absolute;
+        text-align: center;
+        top: 5%;
+        left: 35%;
+        p{
+            font-size: 18pt;
+            text-transform: capitalize;
+            margin-bottom: 0;
+        }
+        i{
+            color:$gold;
+        }
+        a{  
+            display: block;
+            color:$white-1;
+            background: $green-nav;
+            padding: 5px 15px;
+            border: 1px solid $green-nav;
+            text-decoration: none;
+            :hover{
+                background: $green-nav-hover;
+            }
+        }
+        .btn-light{
+            border-radius: 50%;
+            i{
+                color:$black-1;
+            }
+        }
+    }
+}
+.directory{
+    ol{
+        background: none;
+    }
+}
+.grid--view{
+    height: 100%;
+    padding-bottom: 30px;
+    .grid--banner{
+        width: 100%;
+        height: 7%;
+        padding-top: 40px;
+    }
+    .icon--left{
+        i{
+            padding: 0 20px;
+            font-size: 15pt;
+            &:hover{
+                color:$green-nav-hover;
+            }
+        }
+    }
+    .icon--right{
+        width: 54%;
+        p{
+            display: inline;
+            font-size: 15pt
+        }
+    }
+}
+.paginate{
+    color:$black-1;
+    padding-right: 8%;
+    li{
+        :hover{
+            color:$white-1;
+            background: $green-nav-hover;
+        }
+    }
+}
+.side--bar{
+    .color{
+        width: 49%;
+        height: 100px;
+        display:inline-block;
+        position: relative;
+        .circle{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        a{
+            display:inline;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            color:$grey-1;
+            text-decoration: none;
+            :hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+.list--view{
+    height: 100%;
+    padding-bottom: 30px;
+    
+    .grid--banner{
+        width: 100%;
+        height: 7%;
+        padding-top: 40px;
+    }
+    .icon--left{
+        i{
+            padding: 0 20px;
+            font-size: 15pt;
+            &:hover{
+                color:$green-nav-hover;
+            }
+        }
+    }
+    .icon--right{
+        width: 54%;
+        p{
+            display: inline;
+            font-size: 15pt
         }
     }
 }
