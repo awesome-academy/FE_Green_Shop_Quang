@@ -1,0 +1,29 @@
+
+.title{
+    font-size: 16.24pt;
+    font-family: 'roboto';
+    font-weight: bold;
+    color:$green-nav;
+    padding-top: 40px;
+    text-transform: capitalize;
+}
+.row{
+    padding: 0;
+    margin: 0;
+}
+.new-tag{
+    @include tag($green-nav);
+}
+.discount-tag{
+    @include tag($discount);
+}
+
+.price{
+    color:$discount;
+    font-weight: bold;
+}
+s{
+    font-size: 10pt;
+    color:$grey-1;
+    display: block;
+}
