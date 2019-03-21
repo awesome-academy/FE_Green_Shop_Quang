@@ -470,4 +470,32 @@ footer {
       display: inline;
       font-size: 15pt; }
 
+.detail--product {
+  padding-top: 40px; }
+  .detail--product .detail-avt {
+    width: 100%; }
+  .detail--product .mini-slides {
+    padding-top: 15px; }
+    .detail--product .mini-slides img {
+      width: 20%;
+      padding: 0 10px; }
+  .detail--product .detail--info .btn-success {
+    border-radius: 20px;
+    padding: 5px 45px; }
+  .detail--product .detail--info .btn-light {
+    border-radius: 50%; }
+  .detail--product .detail--info input[type="number"] {
+    border: 1px solid #898989;
+    width: 10%;
+    height: 5%;
+    border-radius: 30px;
+    padding: 0 5px; }
+  .detail--product .detail--info .quantity {
+    display: inline-block;
+    padding-right: 20px; }
+  .detail--product .detail--tab {
+    padding-top: 10%; }
+    .detail--product .detail--tab .tab-pane {
+      padding-top: 40px; }
+
 /*# sourceMappingURL=style.css.map */

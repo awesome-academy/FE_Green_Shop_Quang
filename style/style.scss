@@ -33,7 +33,6 @@ body{
         margin-right: 10%;
     }
 }
-
 .banner{
     color:$white-1;
     .float-sm-left{
@@ -396,6 +395,46 @@ footer{
         p{
             display: inline;
             font-size: 15pt
+        }
+    }
+}
+.detail--product{
+    padding-top: 40px;
+    .detail-avt{
+        width: 100%;
+    }
+    .mini-slides{
+        padding-top: 15px;
+        img{
+            width: 20%;
+            padding: 0 10px;
+        }
+    }
+    .detail--info{
+        .btn-success{
+            border-radius:20px;
+            padding: 5px 45px;
+        }
+        .btn-light{
+            border-radius: 50%;
+        }
+        input[type="number"]{
+            border: 1px solid $grey-1;
+            width: 10%;
+            height: 5%;
+            border-radius:30px;
+            padding: 0 5px;
+        }
+        .quantity{
+            display: inline-block;
+            padding-right: 20px;
+        }
+    }
+    
+    .detail--tab{
+        padding-top: 10%;
+        .tab-pane{
+            padding-top: 40px;
         }
     }
 }
