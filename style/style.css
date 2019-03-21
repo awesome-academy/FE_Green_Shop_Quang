@@ -86,6 +86,53 @@ s {
   .status-bar .float-sm-right {
     margin-right: 10%; }
 
+.grid--view {
+  height: 100%;
+  padding-bottom: 30px; }
+  .grid--view .directory ol {
+    background: none; }
+  .grid--view .grid--banner {
+    width: 100%;
+    height: 7%;
+    padding-top: 40px; }
+  .grid--view .icon--left i {
+    padding: 0 20px;
+    font-size: 15pt; }
+    .grid--view .icon--left i:hover {
+      color: #36a66d; }
+  .grid--view .icon--right {
+    width: 54%; }
+    .grid--view .icon--right p {
+      display: inline;
+      font-size: 15pt; }
+
+.paginate {
+  color: #202020;
+  padding-right: 8%; }
+  .paginate li :hover {
+    color: #f2f2f2;
+    background: #36a66d; }
+
+.side--bar .color {
+  width: 49%;
+  height: 100px;
+  display: inline-block;
+  position: relative; }
+  .side--bar .color .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block; }
+  .side--bar .color a {
+    display: inline;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    color: #898989;
+    text-decoration: none; }
+    .side--bar .color a :hover {
+      text-decoration: none; }
+
 .banner {
   color: #f2f2f2; }
   .banner .float-sm-left {
@@ -121,14 +168,14 @@ s {
         color: #898989;
         font-size: 12pt; }
 
-nav {
+.navigation--bar {
   background: #3fb871; }
-  nav .nav-item {
+  .navigation--bar .nav-item {
     padding: 0 45px;
     list-style-type: none; }
-    nav .nav-item:hover {
+    .navigation--bar .nav-item:hover {
       background: #36a66d; }
-    nav .nav-item a {
+    .navigation--bar .nav-item a {
       color: #f2f2f2;
       font-size: 12pt;
       text-decoration: none; }
