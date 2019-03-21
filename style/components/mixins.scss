@@ -1,0 +1,66 @@
+@mixin border {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background:$green-nav;
+    border-radius: 40px;
+}
+
+@mixin tag($bg) {
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        top: 7%;
+        left: 15%;
+        z-index: 2;
+        background: $bg;
+        p{
+            color:$white-1;
+            font-size: 15pt;
+            padding-top: 7px;
+            margin: 0;
+        }
+}
+
+@mixin hover_largeBox($width,$height,$top,$bot,$right) {
+    .box{
+        position: absolute;
+        width: $width;
+        height: $height;
+        top: $top;
+        background: #3232323a;
+        opacity: 0;
+        transition: 0.4s all;
+    }
+    &:hover >.box{
+        opacity: 1;
+    }
+    .btns{
+        position: absolute;
+        bottom: $bot;
+        right: $right;
+        padding: 0 2px;
+        a{
+            display: inline-block;
+            font-size: 16pt;
+            text-decoration: none;
+            padding: 6px 12px;
+        }
+        .buy-now{
+            padding: 30px;
+            color:$white-1;
+            padding: 10px 20px;
+            background: $green-nav;
+            border-radius: 30px;
+            text-transform:capitalize;
+        }
+        .search{
+            color:$black-1;
+            background: $white-1;
+            padding: 10px 10px;
+            border-radius: 50%;
+        }
+    }
+}
