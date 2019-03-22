@@ -1,0 +1,56 @@
+
+.title{
+    font-size: 16.24pt;
+    font-family: 'roboto';
+    font-weight: bold;
+    color:$green-nav;
+    padding-top: 40px;
+    text-transform: capitalize;
+}
+.row{
+    padding: 0;
+    margin: 0;
+}
+.new-tag{
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 7%;
+    left: 15%;
+    z-index: 2;
+    background: $green-nav;
+    p{
+        color:$white-1;
+        font-size: 15pt;
+        padding-top: 7px;
+        margin: 0;
+    }
+}
+.discount-tag{
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 7%;
+    left: 15%;
+    z-index: 2;
+    background: $discount;
+    p{
+        color:$white-1;
+        font-size: 15pt;
+        padding-top: 7px;
+        margin: 0;
+    }
+}
+
+.price{
+    color:$discount;
+    font-weight: bold;
+}
+s{
+    font-size: 10pt;
+    color:$grey-1;
+}
