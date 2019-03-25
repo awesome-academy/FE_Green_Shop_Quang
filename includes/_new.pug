@@ -2,16 +2,16 @@
     h2.title Sản Phẩm Mới
     span.border
     .row.text-center
-      each val , index in data2
-        .col-sm-3.medium--product
-          img(src='../images/spx2-'+index+'.png', alt='', srcset='')
-          .box
+        each val , index in data2
+          .col-sm-3.medium--product
+            img(src='../images/spx2-'+index+'.png', alt='', srcset='')
+            .box
               .btns
                   a.buy-now(href='#') mua ngay
                   a.search(href='#')
                     i.fas.fa-search
-          p=val
-          each i in [1,2,3,4,5]
-            i.fas.fa-star
-          p.price 250.000 vnđ
-          s 500.000 nvđ    
+            p=val
+            each i in [1,2,3,4,5]
+              i.fas.fa-star
+            p.price 250.000 vnđ
+            s 500.000 nvđ    

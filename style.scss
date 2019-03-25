@@ -1,0 +1,19 @@
+//variables , functions and reusable components
+@import 'style/components/variable.scss';
+@import 'style/components/font.scss';
+@import 'style/components/mixins.scss';
+@import 'style/components/effects.scss';
+
+// necessary components for the pj 
+@import 'style/includes/_header'; 
+@import 'style/includes/_popup';
+@import 'style/includes/_slide';
+@import 'style/includes/_outstading-product';
+@import 'style/includes/_medium-product';
+@import 'style/includes/_small-product';
+@import 'style/includes/_grid-and-list';
+@import 'style/includes/_detail-product';
+@import 'style/includes/_cart';
+@import 'style/includes/news';
+@import 'style/includes/_contact';
+@import 'style/includes/_MQ';
