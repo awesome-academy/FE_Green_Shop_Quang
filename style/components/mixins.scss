@@ -6,6 +6,25 @@
     border-radius: 40px;
 }
 
+@mixin logo {
+    .logo{
+        margin-left: 10%;
+        h1{
+            font-family: VNF_Museo;
+            font-size: 53.84pt;
+            color:$green-nav;
+            span{
+                font-family: VNFShelia;
+            }
+        }
+        p{
+            font-family: 'Roboto', sans-serif;
+            color:$grey-1;
+            font-size: 18pt;
+        }
+    }
+}
+
 @mixin hover_largeBox($width,$height,$top,$bot,$right) {
     .box{
         position: absolute;
@@ -31,7 +50,6 @@
             padding: 6px 12px;
         }
         .buy-now{
-            padding: 30px;
             color:$white-1;
             padding: 10px 20px;
             background: $green-nav;
@@ -44,5 +62,23 @@
             padding: 10px 10px;
             border-radius: 50%;
         }
+    }
+}
+
+@mixin tag($color) {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 7%;
+    left: 15%;
+    z-index: 2;
+    background: $color;
+    p{
+        color:$white-1;
+        font-size: 15pt;
+        padding-top: 7px;
+        margin: 0;
     }
 }

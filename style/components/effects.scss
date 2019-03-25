@@ -12,38 +12,10 @@
     margin: 0;
 }
 .new-tag{
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    top: 7%;
-    left: 15%;
-    z-index: 2;
-    background: $green-nav;
-    p{
-        color:$white-1;
-        font-size: 15pt;
-        padding-top: 7px;
-        margin: 0;
-    }
+    @include tag($green-nav);
 }
 .discount-tag{
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    top: 7%;
-    left: 15%;
-    z-index: 2;
-    background: $discount;
-    p{
-        color:$white-1;
-        font-size: 15pt;
-        padding-top: 7px;
-        margin: 0;
-    }
+   @include tag($discount);
 }
 
 .price{
@@ -53,4 +25,170 @@
 s{
     font-size: 10pt;
     color:$grey-1;
+}
+// grid and list view
+.option--bar{
+    .icon--left{
+        cursor: pointer;
+        i{
+            padding: 10px;
+            margin: 0 20px;
+            font-size: 18pt;
+            &:hover,&:active{
+                color:$white-1;
+                background: $green-nav-hover;
+            }
+        }
+    }
+    .icon--right{
+        width: 70%;
+        p{
+            display: inline-block;
+            font-weight: bold;
+            padding: 0 10px;
+            text-transform: capitalize;
+        }
+        button{
+            padding: 5px 30px;
+        }
+    }
+}
+.btn-light{
+    border-radius: 50%;
+    i{
+        color:$black-1;
+    }
+}
+.pagination{
+    padding: 30px 0;
+}
+input[type="number"]{
+    width: 50%;
+    text-align: right;
+    border-radius: 40px;
+}
+.border{
+    @include border;
+}
+label{
+    font-size: 15pt;
+    display: inline;
+    &:after{
+        content:" *";
+        color: $discount;
+        display: inline;
+    }
+}
+.check--box{
+    display: inline;
+}
+
+footer{
+    background: $footer;
+    color:$grey-1;  
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+        .info-left{
+            padding-top: 20px;
+            padding-left: 10%;
+            p{
+                margin:0;
+            }
+            a{
+                margin-right: 20px;
+            }
+            .contact-icons a{
+                color:$white-1;
+                font-size: 13pt;
+            }  
+        }
+        .info-right{
+            padding-top: 20px;
+            padding-right: 5%;
+            text-transform: capitalize;
+            display: block;
+            padding-left: 17%;
+            label{
+                font-size: 10pt;
+            }
+        }
+    .our--information{
+        border-top: 1px solid $white-1;
+        color:$grey-1;
+        .float-sm-left{
+            margin-left: 10%;
+            width: 30%; 
+            h1{
+                font-family: VNF_Museo;
+                font-size: 45.84pt;
+                color:$green-nav;
+                span{
+                    font-family: VNFShelia;
+                }
+            }
+            h3{
+                font-family: 'Roboto', sans-serif;
+                color:$grey-1;
+                font-size: 13pt;
+            }
+            p{
+                display: block;
+            }
+        }
+        .float-sm-right{
+            margin-right: 0;
+            ul{
+                display: inline-block;
+                p{
+                    color:$green-nav;
+                    font-size: 12pt;
+                }
+                li{
+                    font-size: 10pt;
+                    list-style-type: none;
+                    text-transform: capitalize;
+                    padding-top: 20px;
+                    a{
+                        color:$grey-1;
+                        &:hover{
+                            color:$white-1;
+                            background: $green-nav-hover;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .menu--bottom{
+        border-top: 1px solid $white-1; 
+        .info--1{
+            padding-left: 9%;
+            p{
+                font-size: 10pt;
+                text-transform:capitalize;
+                display: inline-block;
+                padding: 0 5px;
+            }
+        }
+        .info--2{
+            padding-left: 40%;
+            i{
+                font-size: 10pt;
+                padding: 0 5px;
+            }
+        }
+    }
+    .author{
+        background:#434343;
+        p{
+            text-align: center;
+            display: block;
+            text-transform: capitalize;
+            padding-top: 15px;
+            color:$white-1;
+        }
+    }
 }
