@@ -2,23 +2,15 @@ include includes/_variable
 doctype html
 html(lang='en', dir='ltr')
   head
-    meta(charset='utf-8')
-    title Green Shop
-    link(rel='stylesheet', href='../style/nomarlize.css')
-    link(rel='stylesheet', href='../style/style.css')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
-    link(href='https://fonts.googleapis.com/css?family=Roboto', rel='stylesheet')
-    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.2/css/all.css', integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr', crossorigin='anonymous')
+    include includes/_head
   body
-    include includes/_header
+    include includes/_popup
+    include includes/_header 
+    include includes/_slide  
     .container
-      include includes/_out-standing
-      include includes/_discount
-      include includes/_banner
-      include includes/_new
-      include includes/_articles
+      include includes/_outstanding     
+      include includes/_discount    
+      include includes/_banner    
+      include includes/_new    
+      include includes/_articles  
     include includes/_footer
