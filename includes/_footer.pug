@@ -28,28 +28,24 @@ footer
     .float-sm-right
       ul
         p Thông Tin Khách Hàng
-        -const cliInfo=['tài khoản của tôi','sản phẩm yêu thích','chính sách đổi trả','góp ý','khiếu nại']
         each item in cliInfo
           li
             i.fas.fa-chevron-right
               a(href='#')=item 
       ul
         p Hỗ Trợ Dịch vụ
-        -const support = ['Hệ Thống Cửa Hàng','hướng dẫn mua hàng','hướng dẫn thanh toán','tích điểm đổi quà','câu hỏi thường gặp']
-        each item in support
+        each item in supports
           li
             i.fas.fa-chevron-right
               a(href='#')=item
       ul
         p Chính sách ưu đãi
-        -const policy = ['chính sách giao hàng','chính sách đổi trả sản phẩm','chính sách bảo hành','giới thiệu sản phẩm mới','trả góp']
-        each item in policy
+        each item in policies
           li
             i.fas.fa-chevron-right
               a(href='#')=item
       ul
         p Tin Tức
-        -const news=['tin mới','khuyến mãi','tuyển dụng','downloads','tags']
         each item in news
           li
             i.fas.fa-chevron-right
@@ -57,12 +53,10 @@ footer
     .clearfix
   .row.menu--bottom
     .col-sm-6.info--1
-      -const direct = ['site map' ,'danh mục sản phẩm', 'hợp tác' , 'thông tin liên hệ' ,'câu hỏi thường gặp']
       each item in direct
         p=item
     .col-sm-6.info--2
-      -const fab = ['fab fa-cc-visa', 'fab fa-cc-mastercard', 'fab fa-cc-paypal', 'fab fa-cc-mastercard']
-      each item in fab
+      each item in fabs
         i(class=fab)
   .row.author
     .col-sm-12
