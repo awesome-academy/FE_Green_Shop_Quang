@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Green Shop</title>
     <link rel="stylesheet" href="../style/nomarlize.css">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -14,6 +14,28 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
+    <div id="pop">
+      <button id="close" onclick="document.getElementById('pop').style.display='none'">&times;</button>
+      <div class="popup--content">
+        <div class="row">
+          <div class="col-sm-4"><img src="../images/cú-lừa.png" alt=""></div>
+          <div class="col-sm-8 popup-info">
+            <h1>nhận tin tức từ chúng tôi </h1>
+            <label class="title">đăng ký email ngay hôm nay </label>
+            <div class="input-group mb-3">
+              <input class="form-control" type="text" name="" placeholder="Nhập Email Vào Đây">
+              <div class="input-group-append">
+                <button class="btn btn-success" type="submit"><i class="fas fa-paper-plane"></i></button>
+              </div>
+            </div>
+            <p>
+              Đăng ký email ngay hôm nay để nhận các thông tin về sự kiệnvà các trương chình giảm giá từ chúng tôi</p>
+            <input type="checkbox" name="">
+            <p class="check--box">Không hiển thị lại thông báo này nữa </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <header>
       <div class="status-bar">
         <div class="float-sm-left">Open Time : 8:00-18:00 Mon-Sun 
@@ -23,27 +45,33 @@
         <div class="clearfix"></div>
       </div>
       <div class="banner">
-        <div class="float-sm-left">
+        <div class="float-sm-left logo">
           <h1>Green <span>Shop</span></h1>
           <p>Món quà từ thiên nhiên</p>
         </div>
         <div class="float-sm-right">
           <p><i class="fas fa-phone"> Hỗ trợ :  (04) 6674 2332 - (04) 3786 8904</i></p>
-          <input class="form-control" type="search" placeholder="Tìm Kiếm ... ">
-          <div class="cart"><a href="#"><i class="fas fa-shopping-cart"> 0 Sản Phẩm</i></a></div>
+          <div class="input-group mb-3">
+            <input class="form-control" type="text" placeholder="Search"><span class="input-group-addon">
+              <button class="btn btn-outline-secondary rounded" type="submit"><i class="fas fa-search"></i></button></span>
+          </div>
+          <div class="cart"><a href="#"><i class="fas fa-shopping-cart">0 Sản Phẩm</i></a></div>
         </div>
         <div class="clearfix"></div>
       </div>
       <nav class="navbar navbar-expand-sm justify-content-center">
         <ul class="navbar-nav">
           <li class="nav-item"><a href=""><i class="fas fa-bars"></i></a></li>
-          <li class="nav-item"><a href="#">trang chu</a></li>
-          <li class="nav-item"><a href="#">trang chu</a></li>
-          <li class="nav-item"><a href="#">trang chu</a></li>
-          <li class="nav-item"><a href="#">trang chu</a></li>
+          <li class="nav-item"><a href="#">trang chủ</a></li>
+          <li class="nav-item"><a href="#">giới thiệu</a></li>
+          <li class="nav-item"><a href="#">sản phẩm</a></li>
+          <li class="nav-item"><a href="#">sản phẩm mới</a></li>
+          <li class="nav-item"><a href="#">tin tức</a></li>
+          <li class="nav-item"><a href="#">liên hệ</a></li>
         </ul>
       </nav>
     </header>
+    <div class="slide"></div>
     <div class="container">
       <div class="row text-center">
         <h2 class="title">sản phẩm nổi bật</h2><span class="border"></span>
@@ -234,7 +262,9 @@
           </div>
         </div>
       </div>
-      <div class="row product--banner"><img src="../images/banner-11140x217.png" alt="" srcset=""></div>
+      <div class="row product--banner">
+        <div class="col-sm-12"><img src="../images/banner-11140x217.png" alt="" srcset=""></div>
+      </div>
       <div class="row new--product">
         <h2 class="title">Sản Phẩm Mới</h2><span class="border"></span>
         <div class="row text-center">
@@ -327,8 +357,13 @@
         </div>
       </div>
       <div class="d-flex justify-content-end info-right">
-        <p>Đăng Ký Nhận <span>Email Từ Chúng Tôi</span></p>
-        <input class="form-control" type="text">
+        <label for="">Nhận Thông Tin Từ Chúng Tôi</label>
+        <div class="input-group mb-3">
+          <input class="form-control" type="text">
+          <div class="input-group-append">
+            <button class="btn btn-success" type="submit"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
       </div>
       <div class="clearfix"></div>
       <div class="row our--information">
